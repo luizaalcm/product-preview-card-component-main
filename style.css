@@ -17,7 +17,7 @@ margin: 0px;
 
 body{
     background-color: hsl(30, 38%, 92%);
-
+    
 }
 
 .container{
@@ -27,6 +27,7 @@ body{
     flex-direction: row;
     margin: 10% auto;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .img-container{
@@ -42,26 +43,29 @@ body{
 
 }
 .description > h3 {
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     font-size: 14px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 500;
     padding: 20px;
+    color: hsl(228, 12%, 48%);
+    
     
 }
 
-.description  h1{
+.description > h1{
     font-family: 'Fraunces', serif;
-    padding: 20px;
     font-weight: 700px;
+    padding: 20px;
 }
 
 .description > p{
     font-size: 14px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 500; 
-    padding: 20px;
     line-height: 20px;
+    padding-left: 20px;
+    color: hsl(228, 12%, 48%);
 }
 .value{
     flex-direction: row;
@@ -77,6 +81,8 @@ body{
 }
 .value > .original-value{
     font-family: 'Fraunces', serif;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
 }
 
 button{
@@ -84,8 +90,9 @@ button{
     border: none;
     height: 50px;
     width: 250px;
-    padding: 20px;
+    margin: 25px;
     border-radius: 8px;
+    
 }
 button:hover {
     background-color: hsl(212, 21%, 14%);
@@ -99,3 +106,12 @@ button > a{
     text-decoration: none;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 700;}
+
+    .attribution{
+        text-align: center;
+
+    }
+    .attribution > a{
+        text-decoration: none;
+        color: hsl(158, 36%, 37%);
+    }
