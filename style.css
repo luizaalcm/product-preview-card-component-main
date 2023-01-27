@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family:'Montserrat';
+    src: url(https://fonts.google.com/specimen/Montserrat);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap');
+ 
+
+
+
 *{box-sizing: border-box;
 padding: 0px;
 margin: 0px;
@@ -21,9 +31,71 @@ body{
 
 .img-container{
     width: 300px;
-    height: 287px;
     background-image: url(./images/image-product-desktop.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px 0px 0px 10px;
 }
+
+.description{
+    width: 300px;
+
+}
+.description > h3 {
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 20px;
+    
+}
+
+.description  h1{
+    font-family: 'Fraunces', serif;
+    padding: 20px;
+    font-weight: 700px;
+}
+
+.description > p{
+    font-size: 14px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500; 
+    padding: 20px;
+    line-height: 20px;
+}
+.value{
+    flex-direction: row;
+    position: relative;
+}
+
+.value > .sale{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 2em;
+    padding: 20px;
+}
+.value > .original-value{
+    font-family: 'Fraunces', serif;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    height: 50px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+}
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+    
+}
+button > img{
+    padding-right: 10px;
+}
+button > a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 700;}
