@@ -25,9 +25,10 @@ body{
     width: 600px;
     display: flex;
     flex-direction: row;
-    margin: 10% auto;
+    margin: 7% auto;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.050);
 }
 
 .img-container{
@@ -58,6 +59,7 @@ body{
     font-family: 'Fraunces', serif;
     font-weight: 700px;
     padding: 20px;
+    line-height: 30px;
 }
 
 .description > p{
@@ -71,6 +73,7 @@ body{
 .value{
     flex-direction: row;
     position: relative;
+   margin-left: 10px;
 }
 
 .value > .sale{
@@ -80,19 +83,26 @@ body{
     font-size: 2em;
     padding-top: 10px;
     padding-left: 20px;
+    display: inline-block;
 }
 .value > .original-value{
     font-family: 'Fraunces', serif;
     text-decoration: line-through;
     color: hsl(228, 12%, 48%);
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    margin: 20px;
 }
 
 button{
     background-color: hsl(158, 36%, 37%);
     border: none;
     height: 50px;
-    width: 250px;
-    margin: 25px;
+    width: 225px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
     border-radius: 8px;
     
 }
